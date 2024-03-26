@@ -43,12 +43,13 @@ h6 {
 }
 /* ---------------------------------------------- */
 
-
 body {
   display: grid;
   grid-template-columns: 350px 1fr;
   grid-template-rows: 150px 1fr;
   height: 100vh;
+
+  font-family: sans-serif;
 }
 
 body > div {
@@ -57,4 +58,55 @@ body > div {
 
 .sidebar {
   grid-row: 1/3;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.logo-container {
+  margin-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 64px;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-image {
+  border: 1px solid red;
+  width: 64px;
+  height: 64px;
+}
+
+.logo-text {
+  font-size: 40px;
+}
+
+.sidebar-menu {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.sidebar-menu > ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-template-rows: 32px;
+  gap: 20px;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu-item-logo {
+  border: 1px solid blue;
+  width: 32px;
+  height: 32px;
 }
