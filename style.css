@@ -42,3 +42,19 @@ h6 {
   isolation: isolate;
 }
 /* ---------------------------------------------- */
+
+
+body {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 150px 1fr;
+  height: 100vh;
+}
+
+body > div {
+  border: 1px solid black;
+}
+
+.sidebar {
+  grid-row: 1/3;
+}
