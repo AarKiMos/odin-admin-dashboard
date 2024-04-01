@@ -34,11 +34,13 @@ const projects = [
 const announcements = [
   {
     title: "Site Maintainence",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod nisl vel eros consectetur tempor a sit amet sem. Integer rhoncus dictum sem.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod nisl vel eros consectetur tempor a sit amet sem. Integer rhoncus dictum sem.",
   },
   {
     title: "Office Event",
-    description: "Vestibulum et metus porta dolor molestie volutpat. Curabitur lorem elit, rutrum sed lorem vel, ornare lobortis tellus.",
+    description:
+      "Vestibulum et metus porta dolor molestie volutpat. Curabitur lorem elit, rutrum sed lorem vel, ornare lobortis tellus.",
   },
   {
     title: "Updated Privacy Policy",
@@ -50,37 +52,37 @@ const trending = [
   {
     author: {
       username: "tegan",
-      pfp: ""
+      pfp: "",
     },
     project: {
-      name: "World Peach Builder"
-    }
+      name: "World Peach Builder",
+    },
   },
   {
     author: {
       username: "morgan",
-      pfp: ""
+      pfp: "",
     },
     project: {
-      name: "Super Cool Project"
-    }
+      name: "Super Cool Project",
+    },
   },
   {
     author: {
       username: "kendall",
-      pfp: ""
+      pfp: "",
     },
     project: {
-      name: "Life Changing App"
-    }
+      name: "Life Changing App",
+    },
   },
   {
     author: {
       username: "Alex",
-      pfp: ""
+      pfp: "",
     },
     project: {
-      name: "No traffic Maker"
-    }
-  }
-]
+      name: "No traffic Maker",
+    },
+  },
+];
