@@ -34,13 +34,11 @@ const projects = [
 const announcements = [
   {
     title: "Site Maintainence",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod nisl vel eros consectetur tempor a sit amet sem. Integer rhoncus dictum sem.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     title: "Office Event",
-    description:
-      "Vestibulum et metus porta dolor molestie volutpat. Curabitur lorem elit, rutrum sed lorem vel, ornare lobortis tellus.",
+    description: "Vestibulum et metus porta dolor molestie volutpat. ",
   },
   {
     title: "Updated Privacy Policy",
@@ -48,11 +46,11 @@ const announcements = [
   },
 ];
 
-const trending = [
+const trendings = [
   {
     author: {
       username: "tegan",
-      pfp: "",
+      pfp: "./images/pfp/tegan.png",
     },
     project: {
       name: "World Peach Builder",
@@ -60,8 +58,8 @@ const trending = [
   },
   {
     author: {
-      username: "morgan",
-      pfp: "",
+      username: "aarkimos",
+      pfp: "./images/pfp/aarkimos.png",
     },
     project: {
       name: "Super Cool Project",
@@ -70,7 +68,7 @@ const trending = [
   {
     author: {
       username: "kendall",
-      pfp: "",
+      pfp: "./images/pfp/kendall.png",
     },
     project: {
       name: "Life Changing App",
@@ -79,10 +77,70 @@ const trending = [
   {
     author: {
       username: "Alex",
-      pfp: "",
+      pfp: "./images/pfp/alex.png",
     },
     project: {
       name: "No traffic Maker",
     },
   },
 ];
+
+function createProjectNode(project) {
+  const referenceNode = document.querySelector("#reference-project-card");
+
+  const newProject = referenceNode.cloneNode(true);
+  newProject.classList.remove("reference-node");
+  newProject.removeAttribute("id");
+
+  newProject.querySelector(".title").innerText = project.title;
+  newProject.querySelector(".desc").innerText = project.description;
+
+  return newProject;
+}
+
+function createAnnouncementNode(announcement) {
+  const referenceNode = document.querySelector("#reference-announcement");
+
+  const newAnnouncement = referenceNode.cloneNode(true);
+  newAnnouncement.classList.remove("reference-node");
+  newAnnouncement.removeAttribute("id");
+
+  newAnnouncement.querySelector(".title").innerText = announcement.title;
+  newAnnouncement.querySelector(".desc").innerText = announcement.description;
+
+  return newAnnouncement;
+}
+
+function createTrendingNode(trend) {
+  const referenceNode = document.querySelector("#reference-trending");
+
+  const newTrend = referenceNode.cloneNode(true);
+  newTrend.classList.remove("reference-node");
+  newTrend.removeAttribute("id");
+
+  // newTrend.setAttribute();
+
+  newTrend
+    .querySelector(".pfp-small")
+    .setAttribute("src", `${trend.author.pfp}`);
+  newTrend.querySelector(".title").innerText = "@" + trend.author.username;
+  newTrend.querySelector(".desc").innerText = trend.project.name;
+
+  return newTrend;
+}
+
+const projectContainer = document.querySelector(".project-container");
+const announcementContainer = document.querySelector(".announcement-container");
+const trendingContainer = document.querySelector(".trending-container");
+
+projects.forEach((project) => {
+  projectContainer.appendChild(createProjectNode(project));
+});
+
+announcements.forEach((announcement) => {
+  announcementContainer.appendChild(createAnnouncementNode(announcement));
+});
+
+trendings.forEach((trend) => {
+  trendingContainer.appendChild(createTrendingNode(trend));
+});

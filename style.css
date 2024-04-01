@@ -44,9 +44,13 @@ h6 {
 /* ---------------------------------------------- */
 
 :root {
+  /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
   --base-color: #115e59;
   --accent-color: #db2777;
   --washed-base-color: #ccfbf1;
+
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------------------------------- */
@@ -57,7 +61,9 @@ body {
   grid-template-rows: 175px calc(100vh - 175px);
   height: 100vh;
 
-  font-family: sans-serif;
+  /* font-family: ; */
+
+  /* font-family: sans-serif; */
 }
 
 body > div {
@@ -79,7 +85,7 @@ body > div {
   display: grid;
   grid-template-columns: 64px 1fr;
   grid-template-rows: 64px;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -89,7 +95,8 @@ body > div {
 }
 
 .logo-text {
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .sidebar-menu {
@@ -232,6 +239,7 @@ body > div {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 36px minmax(0, 1fr);
+  gap: 4px;
 }
 
 .projects {
@@ -247,7 +255,7 @@ body > div {
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  grid-auto-rows: 225px;
+  grid-auto-rows: 250px;
   gap: 30px;
   overflow-y: auto;
 }
@@ -256,7 +264,7 @@ body > div {
 .trending-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 100px;
+  grid-auto-rows: 90px;
   background-color: white;
   border-radius: 10px;
   gap: 20px;
@@ -267,6 +275,7 @@ body > div {
 .project-card {
   background-color: white;
   padding: 24px;
+  padding-left: 36px;
   border-radius: 10px;
   box-shadow: 12px 0px var(--accent-color) inset;
 
@@ -303,7 +312,7 @@ body > div {
 
 .announcement {
   border-bottom: 1px solid #bbb;
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
 
   .title {
     font-weight: 600;
@@ -340,4 +349,8 @@ body > div {
 
 .trending-pfp {
   grid-row: 1/3;
+}
+
+.reference-node {
+  display: none;
 }

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Odin Admin Dashboard</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
   </head>
   <body>
     <div class="sidebar">
@@ -143,39 +146,9 @@
       <div class="main-container projects">
         <div class="main-heading">Your Projects</div>
         <div class="project-container">
-          <div class="project-card">
-            <div class="title">Very Cool Project</div>
-            <div class="desc">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              euismod nisl vel eros consectetur tempor a sit amet sem. Integer
-              rhoncus dictum sem. Vestibulum et metus porta dolor molestie
-              volutpat. Curabitur lorem elit, rutrum sed lorem vel, ornare
-              lobortis tellus. Mauris ultricies imperdiet condimentum. Aliquam
-              erat volutpat. ",
-            </div>
-            <div class="button-row">
-              <div></div>
-              <div class="button">
-                <img src="./images/icons/star.svg" alt="" />
-              </div>
-              <div class="button">
-                <img src="./images/icons/follow.svg" alt="" />
-              </div>
-              <div class="button">
-                <img src="./images/icons/source-fork.svg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="title">Very Cool Project</div>
-            <div class="desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              euismod nisl vel eros consectetur tempor a sit amet sem. Integer
-              rhoncus dictum sem. Vestibulum et metus porta dolor molestie
-              volutpat. Curabitur lorem elit, rutrum sed lorem vel, ornare
-              lobortis tellus.
-            </div>
+          <div class="project-card reference-node" id="reference-project-card">
+            <div class="title"></div>
+            <div class="desc"></div>
             <div class="button-row">
               <div></div>
               <div class="button">
@@ -194,19 +167,21 @@
       <div class="main-container">
         <div class="main-heading">Announcements</div>
         <div class="announcement-container custom-scroll">
-          <div class="announcement">
-            <div class="title">Title</div>
-            <div class="desc">askdjf;aklsjdfkl alskdjfoaisd lfkasdiofg kl</div>
+          <div class="announcement reference-node" id="reference-announcement">
+            <div class="title"></div>
+            <div class="desc"></div>
           </div>
         </div>
       </div>
       <div class="main-container">
         <div class="main-heading">Trending</div>
         <div class="trending-container custom-scroll">
-          <div class="trending">
-            <div class="pfp-small trending-pfp"></div>
-            <div class="title">@tegan</div>
-            <div class="desc">World Class App</div>
+          <div class="trending reference-node" id="reference-trending">
+            <div class="trending-pfp">
+              <img src="" alt="" class="pfp-small" />
+            </div>
+            <div class="title"></div>
+            <div class="desc"></div>
           </div>
         </div>
       </div>
